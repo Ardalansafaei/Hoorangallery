@@ -1,0 +1,178 @@
+body{
+background-color: #ffffff;
+}
+.headcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: fit-content;
+    justify-self: center;
+    box-shadow: 2px 2px 25px 2px rgba(0, 0, 0, 0.316);
+
+    
+}
+
+/* .title-background {
+
+    background-image: url("./Assets/title-bkg.png");
+    background-size: 100% 100%;
+
+} */
+.title-background {
+    background: linear-gradient(300deg, #ffffff, #6a6a6a, #ffffff);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+
+@font-face {
+    font-family: Nastealiq;
+    src: url(./Assets/ReemKufiInk-Regular.ttf);
+    
+ }
+ @font-face {
+    font-family: farsi;
+    src: url(./Assets/Rubik-Light.ttf);
+    
+ }
+ @font-face {
+    font-family: qahiri;
+    src: url(./Assets/Alkalami-Regular.ttf);
+    
+ }
+ h1 {
+    font-family: qahiri ;
+    font-size: 20px;
+    color: aliceblue;
+ }
+
+ h2 { 
+    font-family: farsi ;
+    font-size: 2px;
+    color: rgb(0, 0, 0);
+
+ }
+
+ h3{
+    font-family: qahiri ;
+    
+ }
+
+ #safesend {
+
+    font-weight: bold;
+ }
+ .gentext{
+    font-family: farsi ;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+
+ }
+
+ p{
+    text-align: justify;
+ }
+ .nav-link {
+
+    color: rgb(0, 0, 0);
+    font-family: farsi ;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    text-align: justify;
+ }
+
+ #logo {
+    border-radius: 50%;
+ }
+
+
+#comment > * {
+    font-family: farsi ;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    text-align: justify;
+    
+}
+
+.btn {
+    font-family: farsi ;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    text-align: justify;
+}
+
+.btn a:hover {
+    
+    
+    color: rgb(68, 0, 255);
+    
+}
+
+.dropdown-menu {
+    text-align: right;
+    align-items: right;
+    /* border:none;
+    background-color: #6a6a6a00; */
+}
+
+.headcontainer {
+    background-color: #ffffff90;
+    border-radius: 5px;
+    width: 100%;
+}
+
+
+#secdeliverylogo {
+    float: right;
+    padding-top: 50px;
+}
+
+
+
+
+/* ///////////////////////////////// */
+
+
+.carousel-inner {
+    /* max-width: 50% !important;
+    margin: 200px !important; */
+    padding-right: 10% !important;
+    padding-left: 10% !important;
+    padding-bottom: 200px !important;
+    padding-top: 5% !important;
+}
+
+
+.phototitr {
+    direction: rtl;
+    font-family: farsi;
+    justify-items: end;
+    background-color: #ffffff69;
+    border:none
+}
+
+.captionblock {
+    justify-items: end;
+}
+
+.photocaption {
+    direction: rtl;
+    font-family: farsi;
+    justify-items: end;
+    
+}
+
+#rotategif {
+    width: 35%;
+}

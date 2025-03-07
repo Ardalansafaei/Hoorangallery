@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>گالری هوران خوشنویسی کالیگرافی</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  
+    
+    <style>
+        #rotate-alert {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            font-size: 20px;
+            text-align: center;
+            padding: 50px;
+            z-index: 1000;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #close-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: rgb(23, 157, 209);
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+    </style>
+
+
+  
+    
+</head>
+
+<body>
+
+    <div class="container headcontainer sticky-top">
+        <header class="d-flex flex-wrap align-items-end justify-content-center justify-content-md-between  mb-2 ">
+            <div class="col-md-3 mb-2 mb-md-0">
+                <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+                    <svg class="bi" width="40" height="32" role="img" aria-label="Bootstrap">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                </a>
+            </div>
+
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 gentext ">
+                <li><a href="#home" class="nav-link px-2 mx-3 ">درباره من</a></li>
+                <!-- <li><a href="#comment" class="nav-link px-2 mx-3">درباره این هنر</a></li> -->
+
+                <li><a href="#secdelivery" class="nav-link px-2 mx-3">امنیت ارسال</a></li>
+                <li><a href="#orderhelp" class="nav-link px-2 mx-3">نحوه سفارش</a></li>
+
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle pt-2" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false" dir="rtl" id="drbbtn">گالری ها
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#" dir="rtl">نقاشی خط</a></li>
+                        <li><a class="dropdown-item" href="#" dir="rtl">نستعلیق</a></li>
+                        <li><a class="dropdown-item" href="#coligallery" dir="rtl">کالیگرافی</a></li>
+                    </ul>
+                </div>
+                <li><a href="#home" class="nav-link px-2 ml-5 mx-3">خانه</a></li>
+            </ul>
+        </header>
+    </div>
+
+    <section id="home" class="title-background">
+        <div class="px-4 py-5 my-5 text-center">
+            <img class="d-block mx-auto mb-4 mt-5" src="./Assets/page-logo.jpg" alt="کالیگرافی" width="100" height="100"
+                id="logo">
+            <h1 class="display-5 fw-bold text-body-emphasis" id="cntrtitle">هوران گالری</h1>
+            <div class="col-lg-6 mx-auto">
+                <p class="lead mb-4  mt-5" id="gentext" dir="rtl">«روایت یک احساس»
+                    متناسب با احساست، با شعر و اندازه دلخواه، تابلو رو خاص و منحصر به خودت
+                    کن</p>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center  mt-5">
+                    <a href="https://www.instagram.com/hooran.calligraphy/" target="_blank">
+                        <button type="button" class="btn btn-light btn-lg px-4 gap-3"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                            </svg> Instagram</button></a>
+                    <!-- <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="comment">
+        <div class="container px-4 py-0 comments" id="featured-3">
+            <div class="row g-4 py-0 row-cols-1 row-cols-lg-3 ">
+                <div class="feature col">
+                    <div
+                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                        <!-- <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"></use></svg> -->
+                    </div>
+                    <h3 class="fs-2 text-body-emphasis" dir="rtl">نقاشی خط</h3>
+                    <p dir="rtl">نقاشی‌خط ترکیبی از خوشنویسی و نقاشی است که در آن حروف و کلمات با جلوه‌های بصری هنری
+                        درهم‌آمیخته می‌شوند. این سبک هنری، با الهام از خوشنویسی سنتی، به شیوه‌ای مدرن اجرا شده و اغلب
+                        مفاهیم انتزاعی و احساسی را منتقل می‌کند.</p>
+                    <br><a href="#" class="icon-link">
+                        برو به گالری نقاشی خط
+                        <svg class="bi">
+                            <use xlink:href="#chevron-right"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="feature col">
+                    <div
+                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                        <!-- <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"></use></svg> -->
+                    </div>
+                    <h3 class="fs-2 text-body-emphasis" dir="rtl">نستعلیق</h3>
+                    <p dir="rtl">نستعلیق یکی از زیباترین و پرکاربردترین خطوط خوشنویسی فارسی است که در دوره تیموریان شکل
+                        گرفت. این خط به دلیل ظرافت، تعادل و جریان سیال حروف، برای کتابت اشعار و متون ادبی بسیار محبوب
+                        است.</p>
+                    <br><a href="#" class="icon-link">
+                        برو به گالری نستعلیق
+                        <svg class="bi">
+                            <use xlink:href="#chevron-right"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="feature col">
+                    <div
+                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                        <!-- <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg> -->
+                    </div>
+                    <h3 class="fs-2 text-body-emphasis" dir="rtl">کالیگرافی</h3>
+                    <p dir="rtl">کالیگرافی هنر نوشتن حروف و کلمات به شکلی زیبا و هنری است که در فرهنگ‌های مختلف با
+                        سبک‌های گوناگون مانند نستعلیق، گوتیک و کوفی دیده می‌شود. این هنر ترکیبی از فرم، تعادل و ریتم در
+                        طراحی حروف است و در زمینه‌هایی مانند طراحی گرافیک، خوشنویسی مدرن و تزئینات به کار می‌رود.</p>
+                    <a href="#" class="icon-link">
+                        برو به گالری کالیگرافی
+                        <svg class="bi">
+                            <use xlink:href="#chevron-right"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="orderhelp">
+        <div class="container con-grid pt-5 pb-5"></div>
+        <div class="container my-5 pt-5 pb-5">
+            <div class="bg-body-tertiary p-5 rounded pt-5">
+                <div class="col-sm-8 py-5 mx-auto">
+                    <h2 class="fs-3 fw-bold" dir="rtl">نحوه سفارش</h2>
+                    <p class="fs-5" dir="rtl">برای سفارش آنلاین، ابتدا وارد وب‌سایت یا اپلیکیشن فروشگاه موردنظر شوید و
+                        محصولات دلخواه را به سبد خرید اضافه کنید. سپس با وارد کردن اطلاعات موردنیاز، مانند آدرس و روش
+                        پرداخت، سفارش خود را نهایی کرده و منتظر دریافت محصول درب منزل باشید. برخی فروشگاه‌ها امکان
+                        پیگیری سفارش و انتخاب روش ارسال را نیز فراهم می‌کنند.
+                    <p>
+                        <a class="btn btn-outline-secondary" href="https://www.instagram.com/direct/t/17847337104187015"
+                            role="button"> ...از اینجا سفارش بده</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+    </section>
+
+    <section id="secdelivery">
+        <div class="container con-grid pt-5 pb-5">
+            <div class="container my-5 pt-5 pb-5">
+                <div class="bg-body-tertiary p-5 rounded pt-5">
+                    <div id="secdeliverylogo">
+                        <img src="./Assets/deliverlogo.png" alt="" width="150">
+                    </div>
+                    <div class="col-sm-8 py-5 mx-auto">
+                        <h2 class="fs-3 fw-bold" dir="rtl">امنیت ارسال</h2>
+                        <p class="fs-5" dir="rtl">ارسال امن سفارش به مجموعه‌ای از اقدامات گفته می‌شود که تضمین می‌کند
+                            کالا
+                            بدون آسیب و در زمان مقرر به دست مشتری برسد. این شامل بسته‌بندی مناسب، استفاده از روش‌های
+                            حمل‌ونقل مطمئن، رهگیری لحظه‌ای مرسوله و بیمه سفارش در صورت لزوم است. فروشگاه‌ها با همکاری
+                            شرکت‌های معتبر حمل‌ونقل و رعایت استانداردهای ایمنی، از سلامت و امنیت سفارش‌ها اطمینان حاصل
+                            می‌کنند.
+                        <p>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- گالری کالیگرافی -->
+    <section id="coligallery">
+        
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+             </div>
+
+        <div id="carouselExampleFade" class="carousel slide carousel-fade ">
+            <div class="carousel-inner">
+                <div><h3 class="fs-2 text-body-emphasis pt-0" dir="rtl">کالیگرافی</h3></div>
+              <div class="carousel-item active">
+                <img src="./Assets/coligraphy/13.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block captionblock">
+                    <button type="button" class="btn btn-light phototitr fw-bold">تابلوی فهیم</button>
+                    <p class="photocaption">تابلوی 70*50 سانتی متر با محتوای زیبای </p>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./Assets/coligraphy/12.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block captionblock">
+                    <button type="button" class="btn btn-light phototitr fw-bold">تابلوی فهیم</button>
+                    <p class="photocaption">تابلوی 70*50 سانتی متر با محتوای زیبای </p>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./Assets/coligraphy/11.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block captionblock">
+                    <button type="button" class="btn btn-light phototitr fw-bold">تابلوی فهیم</button>
+                    <p class="photocaption">تابلوی 70*50 سانتی متر با محتوای زیبای </p>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./Assets/coligraphy/10.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block captionblock">
+                    <button type="button" class="btn btn-light phototitr fw-bold">تابلوی فهیم</button>
+                    <p class="photocaption">تابلوی 70*50 سانتی متر با محتوای زیبای </p>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./Assets/coligraphy/9.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block captionblock">
+                    <button type="button" class="btn btn-light phototitr fw-bold">تابلوی فهیم</button>
+                    <p class="photocaption">تابلوی 70*50 سانتی متر با محتوای زیبای </p>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./Assets/coligraphy/8.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block captionblock">
+                    <button type="button" class="btn btn-light phototitr fw-bold">تابلوی فهیم</button>
+                    <p class="photocaption">تابلوی 70*50 سانتی متر با محتوای زیبای </p>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./Assets/coligraphy/7.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block captionblock">
+                    <button type="button" class="btn btn-light phototitr fw-bold">تابلوی فهیم</button>
+                    <p class="photocaption">تابلوی 70*50 سانتی متر با محتوای زیبای </p>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./Assets/coligraphy/6.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block captionblock">
+                    <button type="button" class="btn btn-light phototitr fw-bold">تابلوی فهیم</button>
+                    <p class="photocaption">تابلوی 70*50 سانتی متر با محتوای زیبای </p>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./Assets/coligraphy/5.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block captionblock">
+                    <button type="button" class="btn btn-light phototitr fw-bold">تابلوی فهیم</button>
+                    <p class="photocaption">تابلوی 70*50 سانتی متر با محتوای زیبای </p>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./Assets/coligraphy/4.jpg" class="d-block w-100" alt="...">
+
+                <div class="carousel-caption d-none d-md-block captionblock">
+                    <button type="button" class="btn btn-light phototitr fw-bold">تابلوی فهیم</button>
+                    <p class="photocaption">تابلوی 70*50 سانتی متر با محتوای زیبای </p>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./Assets/coligraphy/3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block captionblock">
+                    <button type="button" class="btn btn-light phototitr fw-bold">تابلوی فهیم</button>
+                    <p class="photocaption">تابلوی 70*50 سانتی متر با محتوای زیبای </p>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./Assets/coligraphy/2.jpg" class="d-block w-100" alt="..."><div class="carousel-caption d-none d-md-block captionblock">
+                    <button type="button" class="btn btn-light phototitr fw-bold">تابلوی فهیم</button>
+                    <p class="photocaption">تابلوی 70*50 سانتی متر با محتوای زیبای </p>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./Assets/coligraphy/1.jpg" class="d-block w-100" alt="..."><div class="carousel-caption d-none d-md-block captionblock">
+                    <button type="button" class="btn btn-light phototitr fw-bold">تابلوی فهیم</button>
+                    <p class="photocaption">تابلوی 70*50 سانتی متر با محتوای زیبای </p>
+                  </div>
+              </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next" >
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+    </section>
+
+
+    <div id="rotate-alert">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img src="./Assets/rotate.gif" id="rotategif">
+                </div>
+            </div>
+        </div>
+        <p dir="rtl">برای نمایش بهتر محتوا لطفا صفحه گوشی خود را بچرخانید .</p>
+        <button id="close-btn">متوجه شدم</button>
+    </div>
+    
+    <script>
+        function checkOrientation() {
+            const alertBox = document.getElementById("rotate-alert");
+            const isDismissed = sessionStorage.getItem("dismissed");
+    
+            if (window.innerHeight > window.innerWidth && !isDismissed) {
+                alertBox.style.display = "flex";
+            } else {
+                alertBox.style.display = "none";
+            }
+        }
+    
+        // بستن هشدار و ذخیره در سشن استوریج
+        document.getElementById("close-btn").addEventListener("click", function() {
+            document.getElementById("rotate-alert").style.display = "none";
+            sessionStorage.setItem("dismissed", "true");
+        });
+    
+        // بررسی اولیه هنگام بارگذاری صفحه
+        checkOrientation();
+    
+        // بررسی هنگام تغییر جهت صفحه
+        window.addEventListener("resize", checkOrientation);
+        window.addEventListener("orientationchange", checkOrientation);
+    </script>
+    
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
