@@ -169,7 +169,9 @@ background-color: #070431;
     padding-top: 50px;
 }
 
-
+.navbar-brand {
+    font-family: nastealiq;
+}
 
 @media (max-width: 600px) {
     .col-sm-8 h2 {
