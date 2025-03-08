@@ -31,12 +31,12 @@ background-color: #ffffff;
 } */
 .title-background {
 
-    background-image: url(./Assets/Title_background.gif);
+/*     background-image: url(./Assets/Title_background.gif);
     background-repeat: no-repeat;
   background-position-x: center;
   background-position-y:center ;
-  background-size: auto;
-    /* background: linear-gradient(300deg, #ffffff, #6a6a6a, #ffffff);
+  background-size: auto; */
+    background: linear-gradient(300deg, #ffffff, #6a6a6a, #ffffff);
     background-size: 180% 180%;
     animation: gradient-animation 18s ease infinite;
   }
@@ -50,7 +50,7 @@ background-color: #ffffff;
     }
     100% {
       background-position: 0% 50%;
-    } */
+    }
 }
 
 #gentext {
