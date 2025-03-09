@@ -148,8 +148,16 @@ background-color: #070431;
     
 }
 
+#instabtn {
+    background-color:#d8c992 ;
+    border:none;
+    color: #ffffff;
+    
+}
+
 #instabtn:hover {
-    background-color:rgba(109, 109, 233, 0.57) ;
+    background-color:#F6F0F0 ;
+    color: #d8c992;
 }
 
 .btn a:hover {
