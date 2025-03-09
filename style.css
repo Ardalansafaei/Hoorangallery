@@ -1,5 +1,5 @@
 body{
-background-color: #ebebeb;
+background-color: #F6F0F0;
 }
 .headcontainer {
     display: flex;
@@ -11,9 +11,7 @@ background-color: #ebebeb;
 
     
 }
-#titrgallery {
-      font-family: qahiri;
-}
+
 .container-fluid {
     background-color: #91919100;
 }
@@ -28,7 +26,7 @@ background-color: #ebebeb;
 
 .title-background {
 
-    background: linear-gradient(300deg, #746ee0, #ffffff, #444602);
+    background: linear-gradient(300deg, #F2E2B1, #ffffff, #D5C7A3);
     background-size: 180% 180%;
     animation: gradient-animation 18s ease infinite;
   }
@@ -44,9 +42,18 @@ background-color: #ebebeb;
       background-position: 0% 50%;
     }
 }
+#titrgallery {
+    font-family: qahiri ;
+}
 .containerbg {
 background-color: #070431;
 
+}
+
+.navbar-brand {
+    font-family: nastealiq;
+    /* font-size: 28px; */
+    
 }
 #gentext {
     color:rgb(0, 0, 0);
@@ -171,9 +178,7 @@ background-color: #070431;
     padding-top: 50px;
 }
 
-.navbar-brand {
-    font-family: nastealiq;
-}
+
 
 @media (max-width: 600px) {
     .col-sm-8 h2 {
@@ -184,7 +189,7 @@ background-color: #070431;
     }
 
     #dlvlogo {
-        width: 0px;
+        width: 50px;
     }
 }
 
@@ -197,7 +202,7 @@ background-color: #070431;
     }
 
     #dlvlogo {
-        width: 0px;
+        width: 80px;
     }
 }
 
