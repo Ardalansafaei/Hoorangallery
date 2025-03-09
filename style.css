@@ -11,7 +11,9 @@ background-color: #ebebeb;
 
     
 }
-
+#titrgallery {
+      font-family: qahiri;
+}
 .container-fluid {
     background-color: #91919100;
 }
